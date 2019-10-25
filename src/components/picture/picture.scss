@@ -1,0 +1,48 @@
+.picmain{
+    width: 100%;
+    height: 100%;
+    .bgImg{
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .picbox{
+        width: 670px;
+        height: 940px;
+        column-count: 2;
+        column-gap: 0;
+        position: absolute;
+        left: 50%;
+        top: 200px;
+        margin-left: -335px;
+        div img{
+            width: 100%;
+        }
+        .pic1{
+            width: 332px;
+            height: 555px;
+            display: flex;
+        }
+        .pic2{
+            width: 338px;
+            height:276px;
+            display: flex;
+        }
+        .pic3{
+            width: 338px;
+            height: 355px;
+            display: flex;
+        }
+        .pic4{
+            width:332px;
+            height:383px;
+            display: flex;
+        }
+        .pic5{
+            width:338px;
+            height:304px;
+            display: flex;
+        }
+    }
+}

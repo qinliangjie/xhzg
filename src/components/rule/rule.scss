@@ -1,0 +1,64 @@
+.rulemain{
+    width: 100%;
+    height: 100%;
+    .bgImg{
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .title{
+        position: absolute;
+        font-size: 34px;
+        width: 200px;
+        left: 50%;
+        margin-left: -100px;
+        top: 100px;
+        color: white;
+    }
+    .title::after{
+        content:'';
+        width: 40px;
+        height: 5px;
+        background-color: #df2d2d;
+        position: absolute;
+        bottom:-20px;
+        left: 50%;
+        margin-left: -20px;
+        
+    }
+    .content{
+        position: absolute;
+        color: white;
+        width: 545px;
+        margin-left: -272.5px;
+        left: 50%;
+        top: 250px;
+        font-size: 28px;
+        text-align: left;
+        line-height: 50px;
+        //iphone5
+        @media only screen and (device-width: 320px){
+            top: 180px;
+        }
+    }
+    .footer{
+        width: 616px;
+        height: 109px;
+        position: absolute;
+        bottom: 30px;
+        left: 50%;
+        margin-left: -308px;
+        ul {
+            list-style: none;
+            position: absolute;
+            left: 100px;
+            top: 20px;
+            li {
+                float: left;
+                width: 85px;
+                height: 40px;
+            }
+        }
+    }
+}

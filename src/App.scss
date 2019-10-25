@@ -1,7 +1,99 @@
+html,body,.App,#root{
+  margin:0;
+  padding:0;
+  height: 100%;
+  background-color: #171717;
+}
+$downloadT:1000px;
+@keyframes mymove
+{
+0% {top:-8px;left: -4px;}
+30% {top:-8px;left: -2px;}
+60% {top:-5px;left: 0px;}
+100%{top:-8px;left: -4px;}
+}
+
+@-webkit-keyframes mymove 
+{
+  0% {top:-8px;left: -4px;}
+  30% {top:-8px;left: -2px;}
+  60% {top:-5px;left: 0px;}
+  100%{top:-8px;left: -4px;}
+}
+
 .App {
   text-align: center;
-  .App-Button{
-    width: 750px;
-    height: 88px;
+  
+}
+.logoImg{
+  width: 229px;
+  position: absolute;
+  top: 80px;
+  left: 50%;
+  margin-left: -114.5px;
+}
+.topbgImg{
+  position: absolute;
+  animation: mymove 4s infinite;
+  -webkit-animation:mymove 4s infinite;
+  height: 100%;
+}
+
+.leftImg{
+  position: absolute;
+  top: 110px;
+  right: -20px;
+  width: 226px;
+  height:44px ;
+}
+.play{
+  position: absolute;
+  top:320px;
+  left: -100px;
+  width: 380px;
+}
+.gotoApp{
+  width: 450px;
+  height: 149px;
+  position: absolute;
+  top: $downloadT;
+  left: 50%;
+  margin-left: -225px;
+  background: url(./assets/gotoApp.png) no-repeat;
+  background-size: 100% 100%;
+  font-size: 32px;
+  color: white;
+  line-height: 1.9rem;
+  letter-spacing: .3rem;
+  .gotoAspan{
+    display: inline-block;
+    margin-left: 90px;
   }
+  .texty{
+    display: inline;
+  }
+}
+
+//iphone5
+@media only screen and (device-width: 320px){
+  .gotoApp{top:$downloadT + -200px}
+}
+// 长屏手机
+@media only screen and (device-width: 375px) and (device-height:812px) and (-webkit-device-pixel-ratio:3){
+  @keyframes mymove
+  {
+  0% {top:-8px;left: -10px;}
+  30% {top:-8px;left: -8px;}
+  60% {top:-5px;left: 0px;}
+  100%{top:-8px;left: -15px;}
+  }
+
+  @-webkit-keyframes mymove 
+  {
+    0% {top:-8px;left: -15px;}
+    30% {top:-8px;left: -8px;}
+    60% {top:-5px;left: 0px;}
+    100%{top:-8px;left: -15px;}
+  }
+  .gotoApp{top:$downloadT+200px}
 }
